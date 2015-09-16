@@ -20,11 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-       PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:@"pub-c-1b4f0648-a1e6-4aa1-9bae-aebadf76babe"
-                                                                         subscribeKey:@"sub-c-e9fadae6-f73a-11e4-af94-02ee2ddab7fe"];
-        self.client = [PubNub clientWithConfiguration:configuration];
-        [self.client addListener:self];
-        [self.client subscribeToChannels:@[@"doctor_id"] withPresence:YES];
+    PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:@"pub-c-1b4f0648-a1e6-4aa1-9bae-aebadf76babe"
+     subscribeKey:@"sub-c-e9fadae6-f73a-11e4-af94-02ee2ddab7fe"];
+    self.client = [PubNub clientWithConfiguration:configuration];
+    [self.client addListener:self];
+    [self.client subscribeToChannels:@[@"doctor_id"] withPresence:YES];
 
 
     
@@ -36,29 +36,29 @@
     NSString *DocId=[NSString stringWithFormat:@"%@heartbeat_alert",Docid];
     
     [self.client publish:PulseRate toChannel:DocId storeInHistory:YES
-           withCompletion:^(PNPublishStatus *status) {
-          
+      withCompletion:^(PNPublishStatus *status) {
+         
          
          [self stopLoader];
-             // Check whether request successfully completed or not.
-             if (!status.isError) {
-              
-                     // Message successfully published to specified channel.
+         // Check whether request successfully completed or not.
+         if (!status.isError) {
+             
+             // Message successfully published to specified channel.
              UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"PubNub" message:@"Your Message Successfuly sent to doctor" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
              [alert show];
-                 
+             
          }
-             // Request processing failed.
-             else {
-              
+         // Request processing failed.
+         else {
+             
              UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"PubNub" message:@"Error Occurred !!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
              [alert show];
 
-                     // Handle message publish error. Check 'category' property to find out possible issue
-                     // because of which request did fail.
-                     //
-                     // Request can be resent using: [status retry];
-                 }
+             // Handle message publish error. Check 'category' property to find out possible issue
+             // because of which request did fail.
+             //
+             // Request can be resent using: [status retry];
+             }
      }];
 }
 

@@ -20,7 +20,7 @@
 		93BF058F1B52FAA9004EB6BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF058E1B52FAA9004EB6BA /* QuartzCore.framework */; };
 		93BF05911B5303A2004EB6BA /* Black1_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BF05901B5303A2004EB6BA /* Black1_heart.png */; };
 		93BF05941B555341004EB6BA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BF05931B555341004EB6BA /* MBProgressHUD.m */; };
-		AD92A8E91B0F9724B6EB3E4E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463E7576719E10B75E7A3206 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B6CB4DA40D39B01FCA158842 /* libPods-HeartRateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF3C180B6801311EBB4BCAA /* libPods-HeartRateApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C750348BF50B08279D6BC9D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		463E7576719E10B75E7A3206 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BDE48DF9D427CD5D74386C2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0AF3C180B6801311EBB4BCAA /* libPods-HeartRateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeartRateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE519E919D50564E6F7200B /* Pods-HeartRateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartRateApp/Pods-HeartRateApp.debug.xcconfig"; sourceTree = "<group>"; };
 		885626171AAC6E6100889191 /* HeartRateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856261B1AAC6E6100889191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8856261C1AAC6E6100889191 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		93BF05901B5303A2004EB6BA /* Black1_heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black1_heart.png; sourceTree = "<group>"; };
 		93BF05921B555341004EB6BA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		93BF05931B555341004EB6BA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E5D3C2B1C0BB6229802F464B /* Pods-HeartRateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartRateApp/Pods-HeartRateApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD92A8E91B0F9724B6EB3E4E /* Pods.framework in Frameworks */,
+				B6CB4DA40D39B01FCA158842 /* libPods-HeartRateApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				93BF058E1B52FAA9004EB6BA /* QuartzCore.framework */,
-				463E7576719E10B75E7A3206 /* Pods.framework */,
+				0AF3C180B6801311EBB4BCAA /* libPods-HeartRateApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,8 +172,8 @@
 		C5A368E955633C970328CE3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1C750348BF50B08279D6BC9D /* Pods.debug.xcconfig */,
-				4BDE48DF9D427CD5D74386C2 /* Pods.release.xcconfig */,
+				3FE519E919D50564E6F7200B /* Pods-HeartRateApp.debug.xcconfig */,
+				E5D3C2B1C0BB6229802F464B /* Pods-HeartRateApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,7 +189,6 @@
 				885626131AAC6E6100889191 /* Sources */,
 				885626141AAC6E6100889191 /* Frameworks */,
 				885626151AAC6E6100889191 /* Resources */,
-				89470BE8032E558F6D28F71E /* Embed Pods Frameworks */,
 				7F2C6C5D469A1BA8B56DBD09 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -225,7 +224,7 @@
 		8856260F1AAC6E6100889191 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "CMG Research Ltd";
 				TargetAttributes = {
 					885626161AAC6E6100889191 = {
@@ -306,22 +305,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89470BE8032E558F6D28F71E /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartRateApp/Pods-HeartRateApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -399,6 +383,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Belanger (MQJQL3U429)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -460,31 +445,37 @@
 		};
 		8856263B1AAC6E6100889191 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C750348BF50B08279D6BC9D /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 3FE519E919D50564E6F7200B /* Pods-HeartRateApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tom Belanger (MQJQL3U429)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Belanger (MQJQL3U429)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SampleHeartRateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chronoplay;
 				PRODUCT_NAME = HeartRateApp;
-				PROVISIONING_PROFILE = "54dee0cc-9f67-4c1a-aad1-3a3066233fa7";
+				PROVISIONING_PROFILE = "47444559-3cfc-40fc-9f2c-aa0ecc5531bd";
 			};
 			name = Debug;
 		};
 		8856263C1AAC6E6100889191 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BDE48DF9D427CD5D74386C2 /* Pods.release.xcconfig */;
+			baseConfigurationReference = E5D3C2B1C0BB6229802F464B /* Pods-HeartRateApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tom Belanger (MQJQL3U429)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Belanger (MQJQL3U429)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SampleHeartRateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chronoplay;
 				PRODUCT_NAME = HeartRateApp;
-				PROVISIONING_PROFILE = "54dee0cc-9f67-4c1a-aad1-3a3066233fa7";
+				PROVISIONING_PROFILE = "47444559-3cfc-40fc-9f2c-aa0ecc5531bd";
 			};
 			name = Release;
 		};
@@ -502,6 +493,7 @@
 				);
 				INFOPLIST_FILE = SampleHeartRateAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chronoplay;
 				PRODUCT_NAME = HeartRateAppTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleHeartRateApp.app/SampleHeartRateApp";
 			};
@@ -517,6 +509,7 @@
 				);
 				INFOPLIST_FILE = SampleHeartRateAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chronoplay;
 				PRODUCT_NAME = HeartRateAppTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleHeartRateApp.app/SampleHeartRateApp";
 			};
